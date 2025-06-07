@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Z Index</title>
+
+<style>
+
+body {
+
+background-color: #f0f0f0;
+
+font-family: Arial, sans-serif;
+
+}
+
+.container {
+
+position: relative;
+
+width: 300px;
+
+height: 300px;
+
+margin: 50px auto;
+
+border: 1px solid #ccc;
+
+}
+
+.box {
+
+position: absolute;
+
+width: 100px;
+
+height: 100px;
+
+}
+
+.box1 {
+
+background-color: red;
+
+top: 20px;
+
+left: 20px;
+
+z-index: 3; /* Highest z-index */
+
+}
+
+.box2 {
+
+background-color: blue;
+
+top: 50px;
+
+left: 50px;
+
+z-index: 2; /* Middle z-index */
+
+}
+
+.box3 {
+
+background-color: green;
+
+top: 80px;
+
+left: 80px;
+
+z-index: 1; /* Lowest z-index */
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="box box1">Box 1</div>
+
+<div class="box box2">Box 2</div>
+
+<div class="box box3">Box 3</div>
+
+</div>
+
+<script>
+
+// JavaScript can be added here if needed for interactivity
+
+</script>
+
+
+</body>
+
+</html>
