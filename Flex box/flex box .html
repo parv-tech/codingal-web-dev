@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box in HTMl</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 200px;
+            width: 400px;
+            margin: 8px;
+            padding: 50px;
+            background-color: darkorange;
+        }
+
+        .flex-container div{
+            font-family: fantasy;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 150px;
+            margin: 10px;
+            padding: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
