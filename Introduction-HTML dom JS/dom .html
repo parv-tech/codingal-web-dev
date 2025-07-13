@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> dom manupilation </title>
+</head>
+<body>
+
+    <p id="text"><strong>I am really strong . </strong></p>
+
+    <header>
+        <h1>
+           hello 
+        </h1>
+        <p>
+            World
+        </p>
+    </header>
+    
+    <script>
+      let div = document.createElement("Div") ; 
+      div.id = "division" ;
+      div.className = "alert" 
+      div.innerHTML = "<p>Hello I am the inner HTML of div . </p>" ; 
+      document.body.append(div) ; 
+
+
+      document.getElementById("text").innerHTML="I am really really strong" ; 
+
+      document.querySelector("header p").innerHTML="I am really really very very fast ." ;
+      
+      
+    </script>
+</body>
+</html>
