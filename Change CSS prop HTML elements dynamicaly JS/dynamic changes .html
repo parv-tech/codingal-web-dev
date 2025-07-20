@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamical changes</title>
+    <style>
+        body{
+            background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/64387c56904167.59c11c162bc8d.gif);
+            color: white;
+        }
+
+        .rectangle{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .buttons{
+            padding: 20px;
+            width: 200px;
+            margin: auto;
+                 
+        }
+        button{
+            color: white;
+             background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/64387c56904167.59c11c162bc8d.gif);
+        }
+    </style>
+</head>
+<body>
+    <h1>Make the changes in the HTML document</h1>
+    <br>
+    <br>
+    <div class="rectangle"></div>
+    <br>
+    <br>
+         <div class="buttons">
+                <button onclick="makecircle()">Turn shape to circle</button><br>
+                <button onclick="makerectangle()">Turn shape into rectangle</button><br>
+                <button onclick="hide()">Hide</button><br>
+                <button onclick="show()">Show</button>
+            </div>
+
+            <script>
+                let shape = document.querySelector(".rectangle") ; 
+
+                function makecircle(){
+                shape.style.borderRadius="50%" ;
+                }
+                function hide(){
+                    shape.style.display="none" ; 
+                }
+
+                function show(){
+                    shape.style.display = "block" ; 
+                }
+                function makerectangle(){
+                    shape.style.borderRadius="0%"
+                }
+            </script>
+</body>
+</html>
