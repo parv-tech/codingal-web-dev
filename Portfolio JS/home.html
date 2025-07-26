@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="contact.html">Contact us </a></li>
+        </ul>
+    </nav>
+    <h1>Information about why plants are so important</h1>
+    <img src="https://www.gardendesign.com/pictures/images/900x705Max/dream-team-s-portland-garden_6/beauty-star-calathea-calathea-ornata-pinstripe-calathea-proven-winners_17336.jpg" alt="garden"> 
+    <br>
+    <br>
+    <button onclick="read()">Read more !</button>
+    <p id="text"></p>
+    <script>
+        function read(){
+            document.getElementById("text").innerHTML = "Trees are vital for life on Earth because they produce oxygen and absorb carbon dioxide, helping to fight climate change. They provide shelter and food for countless animals and insects. Trees also prevent soil erosion and keep our air and water clean. Beyond that, they offer shade, beauty, and peace to our surroundings." ; 
+        } ;
+    </script>
+</body>
+</html>
