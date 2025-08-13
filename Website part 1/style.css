@@ -1,0 +1,62 @@
+/* Element Selector */
+
+body {
+
+    font-family: fantasy;
+
+    background-color: black;
+
+}
+
+/* Class Selector */
+
+.navbar {
+
+    background-color: #474444;
+
+    overflow: hidden;
+
+    height: 80px;
+
+    width: auto;
+
+
+    
+
+
+
+}
+
+
+
+/* Group Selector*/
+
+.navbar a {
+
+    float: left;
+
+    display: block;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+}
+
+/* Pesudo Selector */
+
+.navbar a:hover {
+
+    background-color: #e1ff00;
+
+    color: rgb(0, 0, 0);
+
+}
+
+.navbar ul {
+    list-style: none;
+}

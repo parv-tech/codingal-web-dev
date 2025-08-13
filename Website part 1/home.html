@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Service.html">service</a></li>
+        </ul>
+    </div>
+
+    <section>
+
+        <img class="slide" src="https://i.pinimg.com/originals/e5/9d/b1/e59db16c28231975d8866a7f263c0558.gif" style="width: 100%; height: auto;">
+
+        <img class="slide" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHl6N2d5cXNuaHpld2l5eTJsbjJpZXo5N2RrbHh6aHplamFqcnk0dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PmCiutdmK8mt2/giphy.gif" style="width: 100%; height: auto;">
+
+        <img class="slide" src="https://media1.tenor.com/m/uTivR7jBsDQAAAAC/naruto.gif" style="width: 100%; height: auto;">
+
+        <img class="slide" src="https://i.pinimg.com/originals/86/25/61/8625616296be134c41e0610e4fd3bdc3.gif" style="width: 100%; height: auto;">
+
+
+
+    </section>
+
+    <script>
+
+        let currentIndex = 0;
+
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+
+            slides.forEach((slide, i) => {
+
+                slide.style.display = (i === index)
+
+                    ? 'block' : 'none';
+
+            });
+
+        }
+
+        function nextSlide() {
+
+            currentIndex = (currentIndex + 1)
+
+                % slides.length;
+
+            showSlide(currentIndex);
+
+        }
+
+        function prevSlide() {
+
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+
+            showSlide(currentIndex);
+
+        }
+
+        // Initialize the first slide
+
+        showSlide(currentIndex);
+
+        // Set interval for automatic slide change
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+
+    </script>
+</body>
+
+</html>
